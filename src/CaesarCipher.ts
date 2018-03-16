@@ -1,4 +1,4 @@
-export default class CaesarCipher {
+export class CaesarCipher {
   private static ref = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
   constructor (private key: number, private customRef = CaesarCipher.ref) { }
@@ -29,3 +29,5 @@ export default class CaesarCipher {
     return CaesarCipher.shift(text, -this.key, this.customRef);
   }
 }
+
+export default CaesarCipher;
