@@ -1,0 +1,57 @@
+{
+  "name": "typescript-project-template",
+  "version": "2.1.0",
+  "description": "A TS project template",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "ts",
+    "project"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:theofilis/typescript-project-template.git"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "npx tsc -p tsconfig.json",
+    "report-coverage": "npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov --token=a31d5466-220d-48fe-8d2f-183a2d1a83cb",
+    "test": "npx nyc ./node_modules/.bin/mocha --reporter mocha-circleci-reporter --slow 0.0001 --timeout 10000 -b -r ts-node/register -P tsconfig.test.json test/**/*.spec.ts"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "author": "George Theofilis",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/chai": "4.0.4",
+    "@types/mocha": "2.2.42",
+    "@types/node": "8.0.24",
+    "chai": "4.1.1",
+    "codecov": "3.0.0",
+    "mocha": "3.5.0",
+    "mocha-circleci-reporter": "0.0.2",
+    "nyc": "11.1.0",
+    "ts-node": "5.0.1",
+    "tslint": "5.9.1",
+    "tslint-config-standard": "7.0.0",
+    "typescript": "2.7.2"
+  },
+  "dependencies": {}
+}

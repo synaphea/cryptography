@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.001" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-03-16T14:27:13" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Create a node" timestamp="2018-03-16T14:27:13" tests="4" file="/mnt/c/Projects/Crypto/cryptography/test/CaesarCipher.spec.ts" failures="0" time="0.001">
+    <testcase name="Create a node Check &quot;CaesarCipher.encrypt&quot;" time="0.001" classname="Check &quot;CaesarCipher.encrypt&quot;">
+    </testcase>
+    <testcase name="Create a node Check &quot;CaesarCipher.decrypt&quot;" time="0" classname="Check &quot;CaesarCipher.decrypt&quot;">
+    </testcase>
+    <testcase name="Create a node Check &quot;CaesarCipher.encrypt&quot;" time="0" classname="Check &quot;CaesarCipher.encrypt&quot;">
+    </testcase>
+    <testcase name="Create a node Check &quot;CaesarCipher.decrypt&quot;" time="0" classname="Check &quot;CaesarCipher.decrypt&quot;">
+    </testcase>
+  </testsuite>
+</testsuites>
