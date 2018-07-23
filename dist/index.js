@@ -1,6 +1,8 @@
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(require("./CaesarCipher"));
+var Rot13Cipher_1 = require("./Rot13Cipher");
+exports.Rot13Cipher = Rot13Cipher_1.Rot13Cipher;
+var CaesarCipher_1 = require("./CaesarCipher");
+exports.CaesarCipher = CaesarCipher_1.CaesarCipher;
+var MorseCipher_1 = require("./MorseCipher");
+exports.MorseCipher = MorseCipher_1.MorseCipher;

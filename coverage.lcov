@@ -1,5 +1,5 @@
 TN:
-SF:/mnt/c/Projects/Crypto/cryptography/src/CaesarCipher.ts
+SF:D:\Projects\cryptography\src\CaesarCipher.ts
 FN:4,(anonymous_0)
 FN:24,(anonymous_1)
 FN:28,(anonymous_2)
@@ -48,7 +48,7 @@ BRF:8
 BRH:8
 end_of_record
 TN:
-SF:/mnt/c/Projects/Crypto/cryptography/src/MorseCipher.ts
+SF:D:\Projects\cryptography\src\MorseCipher.ts
 FN:1,(anonymous_0)
 FN:47,(anonymous_1)
 FN:49,(anonymous_2)
@@ -101,7 +101,7 @@ BRF:6
 BRH:6
 end_of_record
 TN:
-SF:/mnt/c/Projects/Crypto/cryptography/src/Rot13Cipher.ts
+SF:D:\Projects\cryptography\src\Rot13Cipher.ts
 FN:3,(anonymous_0)
 FN:14,(anonymous_1)
 FN:18,(anonymous_2)
@@ -132,7 +132,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/mnt/c/Projects/Crypto/cryptography/src/index.ts
+SF:D:\Projects\cryptography\src\index.ts
 FNF:0
 FNH:0
 DA:1,1

@@ -45,6 +45,7 @@
     "@types/node": "8.0.24",
     "chai": "4.1.1",
     "codecov": "3.0.0",
+    "growl": "1.10.5",
     "mocha": "3.5.0",
     "mocha-circleci-reporter": "0.0.2",
     "nyc": "11.1.0",
