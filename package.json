@@ -1,7 +1,7 @@
 {
-  "name": "typescript-project-template",
-  "version": "2.1.0",
-  "description": "A TS project template",
+  "name": "cryptography",
+  "version": "2.2.0",
+  "description": "A cryptography algorithms",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:theofilis/typescript-project-template.git"
+    "url": "git@github.com:synaphea/cryptography.git"
   },
   "scripts": {
     "prepare": "npm run build",

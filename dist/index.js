@@ -6,3 +6,5 @@ var CaesarCipher_1 = require("./CaesarCipher");
 exports.CaesarCipher = CaesarCipher_1.CaesarCipher;
 var MorseCipher_1 = require("./MorseCipher");
 exports.MorseCipher = MorseCipher_1.MorseCipher;
+var AffineCipher_1 = require("./AffineCipher");
+exports.AffineCipher = AffineCipher_1.AffineCipher;
