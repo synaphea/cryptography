@@ -3,8 +3,8 @@ import { expect } from 'chai';
 import { AffineCipher } from '../src/index';
 
 describe(`Test "AffineCipher"`, () => {
-  const encrypter = new AffineCipher(5, 8);
-  let encrypted = 'rovvy GyBvn';
+  const encrypter = new AffineCipher(7, 10);
+  let encrypted = 'oZ@@U BUj@S';
   let decrypted = 'hello world';
 
 //   it('Check static "AffineCipher.encrypt"', () => {
@@ -16,10 +16,10 @@ describe(`Test "AffineCipher"`, () => {
 //   });
 
   it('Check "AffineCipher.encrypt"', () => {
-    expect('ByFFI QILFx').to.be.equal(encrypter.encrypt(decrypted));
+    expect(encrypted).to.be.equal(encrypter.encrypt(decrypted));
   });
 
   it('Check "AffineCipher.decrypt"', () => {
-    expect(decrypted).to.be.equal(encrypter.decrypt('ByFFI QILFx'));
+    expect(decrypted).to.be.equal(encrypter.decrypt(encrypted));
   });
 });

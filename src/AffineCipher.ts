@@ -1,6 +1,11 @@
 import { Cipher } from './Cipher';
 
 export class AffineCipher implements Cipher {
+    
+    private ciphers: Array<string> = [];
+
+    private N = 48;
+    private M = 75;
 
     constructor(a: number, b: number) {
         this.affine(a, b);
@@ -14,20 +19,36 @@ export class AffineCipher implements Cipher {
         return '';
     }
 
-    public encrypt = (text: string) => {
-        return '';
+    public encrypt = (text: string): string => {
+        return text.split('')
+            .map(c => this.ciphers[c.charCodeAt(0) - this.M] || ' ')
+            .reduce((p, n) => p + n);
     }
 
     public decrypt = (text: string) => {
-        return '';
+        return text.split('')
+            .map(c => this.decryptChar(c) || ' ')
+            .reduce((p, n) => p + n);
+    }
+
+    private decryptChar = (cipher: string) => {
+        const index = this.ciphers.indexOf(cipher);
+        return (index == -1) ? null : String.fromCharCode(index + this.M);
     }
 
     private affine = (a: number, b: number) => {
-        const n = 48;
-        for (let i = 0; i < 75; i++) {
-            console.log(String.fromCharCode(n + i), String.fromCharCode(((a * i + b) % 75) + n));
+        for (let i = this.N; i < this.M + this.N; i++) {
+            const x = i - this.N;
+            const x1 = a * x + b;
+            const x2 = x1 % this.M;
+
+            const cipher = String.fromCharCode(x2 + this.N);
+            if (this.ciphers.indexOf(cipher) == -1) {
+                this.ciphers.push(cipher);
+            } else {
+                throw Error(`The value of a has to be coprime with ${this.M}`);
+            }
         }
-        // print(chr(i+65) + ": " + chr(((a*i+b)%26)+65))
     }
 }
 
