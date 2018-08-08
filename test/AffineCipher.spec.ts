@@ -7,13 +7,13 @@ describe(`Test "AffineCipher"`, () => {
   let encrypted = 'oZ@@U BUj@S';
   let decrypted = 'hello world';
 
-//   it('Check static "AffineCipher.encrypt"', () => {
-//     expect(encrypted).to.be.equal(AffineCipher.encrypt(decrypted, 10));
-//   });
+  it('Check static "AffineCipher.encrypt"', () => {
+    expect(encrypted).to.be.equal(AffineCipher.encrypt(decrypted));
+  });
 
-//   it('Check static "AffineCipher.decrypt"', () => {
-//     expect(decrypted).to.be.equal(AffineCipher.decrypt(encrypted, 10));
-//   });
+  it('Check static "AffineCipher.decrypt"', () => {
+    expect(decrypted).to.be.equal(AffineCipher.decrypt(encrypted));
+  });
 
   it('Check "AffineCipher.encrypt"', () => {
     expect(encrypted).to.be.equal(encrypter.encrypt(decrypted));
