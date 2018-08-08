@@ -1,7 +1,7 @@
 import { Cipher } from './Cipher';
 
 export class AffineCipher implements Cipher {
-    
+    private static suite = new AffineCipher(7, 10);
     private ciphers: Array<string> = [];
 
     private N = 48;
@@ -11,13 +11,11 @@ export class AffineCipher implements Cipher {
         this.affine(a, b);
     }
 
-    public static encrypt = (text: string) => {
-        return '';
-    }
+    public static encrypt = 
+        (text: string) => AffineCipher.suite.encrypt(text);
 
-    public static decrypt = (text: string) => {
-        return '';
-    }
+    public static decrypt = 
+        (text: string) => AffineCipher.suite.decrypt(text);
 
     public encrypt = (text: string): string => {
         return text.split('')
