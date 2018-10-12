@@ -3,3 +3,4 @@ export { CaesarCipher } from './ciphers/CaesarCipher';
 
 export { MorseCipher } from './ciphers/MorseCipher';
 export { AffineCipher } from './ciphers/AffineCipher';
+export { RunningKeyCipher } from './ciphers/RunningKeyCipher';

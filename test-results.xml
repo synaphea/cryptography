@@ -1,41 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.006" tests="14" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-10-12T08:34:29" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.004" tests="18" failures="1">
+  <testsuite name="Root Suite" timestamp="2018-10-12T12:00:31" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Test &quot;AffineCipher&quot;" timestamp="2018-10-12T08:34:29" tests="4" file="D:\Projects\cryptography\test\AffineCipher.spec.ts" failures="0" time="0.003">
+  <testsuite name="Test &quot;AffineCipher&quot;" timestamp="2018-10-12T12:00:31" tests="4" file="D:\Projects\cryptography\test\AffineCipher.spec.ts" failures="0" time="0.001">
     <testcase name="Test &quot;AffineCipher&quot; Check static &quot;AffineCipher.encrypt&quot;" time="0.001" classname="Check static &quot;AffineCipher.encrypt&quot;">
     </testcase>
-    <testcase name="Test &quot;AffineCipher&quot; Check static &quot;AffineCipher.decrypt&quot;" time="0.001" classname="Check static &quot;AffineCipher.decrypt&quot;">
+    <testcase name="Test &quot;AffineCipher&quot; Check static &quot;AffineCipher.decrypt&quot;" time="0" classname="Check static &quot;AffineCipher.decrypt&quot;">
     </testcase>
-    <testcase name="Test &quot;AffineCipher&quot; Check &quot;AffineCipher.encrypt&quot;" time="0.001" classname="Check &quot;AffineCipher.encrypt&quot;">
+    <testcase name="Test &quot;AffineCipher&quot; Check &quot;AffineCipher.encrypt&quot;" time="0" classname="Check &quot;AffineCipher.encrypt&quot;">
     </testcase>
     <testcase name="Test &quot;AffineCipher&quot; Check &quot;AffineCipher.decrypt&quot;" time="0" classname="Check &quot;AffineCipher.decrypt&quot;">
     </testcase>
   </testsuite>
-  <testsuite name="Test &quot;CaesarCipher&quot;" timestamp="2018-10-12T08:34:29" tests="4" file="D:\Projects\cryptography\test\CaesarCipher.spec.ts" failures="0" time="0.002">
-    <testcase name="Test &quot;CaesarCipher&quot; Check static &quot;CaesarCipher.encrypt&quot;" time="0.001" classname="Check static &quot;CaesarCipher.encrypt&quot;">
+  <testsuite name="Test &quot;CaesarCipher&quot;" timestamp="2018-10-12T12:00:31" tests="4" file="D:\Projects\cryptography\test\CaesarCipher.spec.ts" failures="0" time="0">
+    <testcase name="Test &quot;CaesarCipher&quot; Check static &quot;CaesarCipher.encrypt&quot;" time="0" classname="Check static &quot;CaesarCipher.encrypt&quot;">
     </testcase>
     <testcase name="Test &quot;CaesarCipher&quot; Check static &quot;CaesarCipher.decrypt&quot;" time="0" classname="Check static &quot;CaesarCipher.decrypt&quot;">
     </testcase>
-    <testcase name="Test &quot;CaesarCipher&quot; Check &quot;CaesarCipher.encrypt&quot;" time="0.001" classname="Check &quot;CaesarCipher.encrypt&quot;">
+    <testcase name="Test &quot;CaesarCipher&quot; Check &quot;CaesarCipher.encrypt&quot;" time="0" classname="Check &quot;CaesarCipher.encrypt&quot;">
     </testcase>
     <testcase name="Test &quot;CaesarCipher&quot; Check &quot;CaesarCipher.decrypt&quot;" time="0" classname="Check &quot;CaesarCipher.decrypt&quot;">
     </testcase>
   </testsuite>
-  <testsuite name="Test &quot;MorseCipher&quot;" timestamp="2018-10-12T08:34:29" tests="2" file="D:\Projects\cryptography\test\MorseCipher.spec.ts" failures="0" time="0">
+  <testsuite name="Test &quot;MorseCipher&quot;" timestamp="2018-10-12T12:00:31" tests="2" file="D:\Projects\cryptography\test\MorseCipher.spec.ts" failures="0" time="0.001">
     <testcase name="Test &quot;MorseCipher&quot; Check &quot;MorseCipher.encrypt&quot;" time="0" classname="Check &quot;MorseCipher.encrypt&quot;">
     </testcase>
-    <testcase name="Test &quot;MorseCipher&quot; Check &quot;MorseCipher.decrypt&quot;" time="0" classname="Check &quot;MorseCipher.decrypt&quot;">
+    <testcase name="Test &quot;MorseCipher&quot; Check &quot;MorseCipher.decrypt&quot;" time="0.001" classname="Check &quot;MorseCipher.decrypt&quot;">
     </testcase>
   </testsuite>
-  <testsuite name="Test &quot;Rot13Cipher&quot;" timestamp="2018-10-12T08:34:29" tests="4" file="D:\Projects\cryptography\test\Rot13Cipher.spec.ts" failures="0" time="0.001">
-    <testcase name="Test &quot;Rot13Cipher&quot; Check static &quot;Rot13Cipher.encrypt&quot;" time="0.001" classname="Check static &quot;Rot13Cipher.encrypt&quot;">
+  <testsuite name="Test &quot;Rot13Cipher&quot;" timestamp="2018-10-12T12:00:31" tests="4" file="D:\Projects\cryptography\test\Rot13Cipher.spec.ts" failures="0" time="0">
+    <testcase name="Test &quot;Rot13Cipher&quot; Check static &quot;Rot13Cipher.encrypt&quot;" time="0" classname="Check static &quot;Rot13Cipher.encrypt&quot;">
     </testcase>
     <testcase name="Test &quot;Rot13Cipher&quot; Check static &quot;Rot13Cipher.decrypt&quot;" time="0" classname="Check static &quot;Rot13Cipher.decrypt&quot;">
     </testcase>
     <testcase name="Test &quot;Rot13Cipher&quot; Check &quot;Rot13Cipher.encrypt&quot;" time="0" classname="Check &quot;Rot13Cipher.encrypt&quot;">
     </testcase>
     <testcase name="Test &quot;Rot13Cipher&quot; Check &quot;Rot13Cipher.decrypt&quot;" time="0" classname="Check &quot;Rot13Cipher.decrypt&quot;">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test &quot;RunningKeyCipher&quot;" timestamp="2018-10-12T12:00:31" tests="4" file="D:\Projects\cryptography\test\RunningKeyCipher.spec.ts" failures="1" time="0.002">
+    <testcase name="Test &quot;RunningKeyCipher&quot; Check static &quot;RunningKeyCipher.encrypt&quot;" time="0.001" classname="Check static &quot;RunningKeyCipher.encrypt&quot;">
+    </testcase>
+    <testcase name="Test &quot;RunningKeyCipher&quot; Check static &quot;RunningKeyCipher.decrypt&quot;" time="0" classname="Check static &quot;RunningKeyCipher.decrypt&quot;">
+    </testcase>
+    <testcase name="Test &quot;RunningKeyCipher&quot; Check &quot;RunningKeyCipher.encrypt&quot;" time="0.001" classname="Check &quot;RunningKeyCipher.encrypt&quot;">
+      <failure><![CDATA[AssertionError: expected '9uL qvq Gur puvpxrA pEBFF Gur EBnq?' to equal 'WHY DID THE CHICKEN CROSS THE ROAD?'
+    at Context.it (test\RunningKeyCipher.spec.ts:19:29)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>
