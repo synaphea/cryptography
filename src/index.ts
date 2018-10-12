@@ -1,5 +1,5 @@
-export { Rot13Cipher } from './Rot13Cipher';
-export { CaesarCipher } from './CaesarCipher';
+export { Rot13Cipher } from './ciphers/Rot13Cipher';
+export { CaesarCipher } from './ciphers/CaesarCipher';
 
-export { MorseCipher } from './MorseCipher';
-export { AffineCipher } from './AffineCipher';
+export { MorseCipher } from './ciphers/MorseCipher';
+export { AffineCipher } from './ciphers/AffineCipher';
