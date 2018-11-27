@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Rot13Cipher_1 = require("./Rot13Cipher");
+var Rot13Cipher_1 = require("./ciphers/Rot13Cipher");
 exports.Rot13Cipher = Rot13Cipher_1.Rot13Cipher;
-var CaesarCipher_1 = require("./CaesarCipher");
+var CaesarCipher_1 = require("./ciphers/CaesarCipher");
 exports.CaesarCipher = CaesarCipher_1.CaesarCipher;
-var MorseCipher_1 = require("./MorseCipher");
+var MorseCipher_1 = require("./ciphers/MorseCipher");
 exports.MorseCipher = MorseCipher_1.MorseCipher;
-var AffineCipher_1 = require("./AffineCipher");
+var AffineCipher_1 = require("./ciphers/AffineCipher");
 exports.AffineCipher = AffineCipher_1.AffineCipher;

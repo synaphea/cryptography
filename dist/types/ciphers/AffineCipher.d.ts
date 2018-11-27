@@ -1,5 +1,6 @@
 import { Cipher } from './Cipher';
 export declare class AffineCipher implements Cipher {
+    private static suite;
     private ciphers;
     private N;
     private M;

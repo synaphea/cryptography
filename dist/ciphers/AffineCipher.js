@@ -36,11 +36,8 @@ class AffineCipher {
         this.affine(a, b);
     }
 }
-AffineCipher.encrypt = (text) => {
-    return '';
-};
-AffineCipher.decrypt = (text) => {
-    return '';
-};
+AffineCipher.suite = new AffineCipher(7, 10);
+AffineCipher.encrypt = (text) => AffineCipher.suite.encrypt(text);
+AffineCipher.decrypt = (text) => AffineCipher.suite.decrypt(text);
 exports.AffineCipher = AffineCipher;
 exports.default = AffineCipher;

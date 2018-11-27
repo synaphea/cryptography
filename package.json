@@ -40,19 +40,20 @@
   "author": "George Theofilis",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@types/chai": "4.0.4",
-    "@types/mocha": "2.2.42",
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.5",
     "@types/node": "8.0.24",
-    "chai": "4.1.1",
-    "codecov": "3.0.0",
+    "chai": "4.2.0",
+    "codecov": "3.1.0",
     "growl": "1.10.5",
-    "mocha": "3.5.0",
-    "mocha-circleci-reporter": "0.0.2",
-    "nyc": "11.1.0",
-    "ts-node": "5.0.1",
-    "tslint": "5.9.1",
-    "tslint-config-standard": "7.0.0",
-    "typescript": "2.7.2"
+    "mocha": "5.2.0",
+    "mocha-circleci-reporter": "0.0.3",
+    "nyc": "13.1.0",
+    "ts-node": "7.0.1",
+    "tslint": "5.11.0",
+    "tslint-config-standard": "8.0.1",
+    "debug": "4.1.0",
+    "typescript": "3.1.6"
   },
   "dependencies": {}
 }
